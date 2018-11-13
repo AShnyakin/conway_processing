@@ -1,14 +1,14 @@
 import processing.core.PApplet;
 
-public class Processing extends PApplet{
+public class Oscillation extends PApplet{
 
     Cell[][] board;
 
-    int cols = 32;
-    int rows = 18;
+    int cols = 80;
+    int rows = 80;
 
     public void settings(){
-        size(320, 180);
+        size(800, 800);
         board = new Cell[cols][rows];
 
         for (int i = 0; i < cols; i++) {
@@ -31,7 +31,7 @@ public class Processing extends PApplet{
     }
 
     public static void main(String... args){
-        PApplet.main("Processing");
+        PApplet.main("Oscillation");
     }
 
 }
